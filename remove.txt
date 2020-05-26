@@ -2,8 +2,7 @@ Write a Java Program To remove all the 10 in the given array
 package ten;
 import java.util.*;
 import java.util.Scanner;
-public class T 
-{
+public class T {
 public static void main(String[] args) {
 int i,j;
 Scanner sc = new Scanner(System.in);
@@ -24,17 +23,17 @@ System.out.println("Enter the length of array");
     {
     a[j]=a[j+1];
     }
+    if(j!=n)
+       {
+    while(j<n)
+        {
+        a[j++]=0;
+        }
+       }
     }
     else
     {
     i++;
-    }
-    }
-    if(i!=n)
-    {
-    for(j=i;j<n;j++)
-    {
-    a[j]=0;
     }
     }
     System.out.println("Array after removing 10:");
@@ -43,3 +42,4 @@ System.out.println("Enter the length of array");
 }
 
 }
+
